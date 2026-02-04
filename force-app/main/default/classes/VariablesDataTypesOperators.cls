@@ -35,7 +35,7 @@ public with sharing class VariablesDataTypesOperators {
         if (a == null || b == null) {
             return null;
         }
-        return sum;
+        return a+b;
     }
 
     /**
@@ -89,7 +89,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the number is even, False otherwise.
      */
     public static Boolean isEven(Integer num) {
-        return Math.mod(num,2); // Replace null with the variable you used to store the result
+        return Math.mod(num,2)==0; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -269,7 +269,7 @@ public with sharing class VariablesDataTypesOperators {
         Double divisionResult = a/b;
 
         // Write the code for type casting the divisionResult to an Integer
-        Integer roundedResult = divisionResult;
+        Integer roundedResult = (Integer) divisionResult;
         return roundedResult; // Replace null with the variable you used to store the result
     }
 
